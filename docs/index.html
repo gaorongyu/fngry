@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+//index.html
+---
+layout: default
+title: Hello World
+---
+
+<h1>hello world</h1>
 
 {% for post in site.posts %}
   <a href="{{ site.baseurl }}{{ post.url }}"> {{post.title}}</a>
   {% comment %} 
-  注意site.baseurl 与 post.url中间没有 "/" ,因为post.url自带了"/"
   {% endcomment %}
 {% endfor %}
 
-</body>
-</html>
