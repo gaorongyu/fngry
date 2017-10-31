@@ -5,10 +5,12 @@ layout: default
 
 ### bean初始化
 
-源自一个应用启动时报的异常  
+源自一个应用启动时报的异常
+```java
 ERROR
   java.lang.NullPointerException: null
   at com.taobao.huijin.hjfinancegw.core.server.process.impl.NListenerImpl.assembleAbstractFinMsg(NListenerImpl.java:122) ~[hjfinancegw-core-1.0.0.37.jar:1.0.0.37]
+```
 
 查看最近一次发布分支
 :![npe](../assets/img/NPE.png)
@@ -30,7 +32,7 @@ NPluginManager.afterpropertiesSet() 循环获取所有bean的过程中
 
 * 解决方案：
 
-  查看代码发现，
+查看代码发现，
   NPluginManager.afterpropertiesSet()解析出notify的订阅topic，messageType
   然后调用了调用NConfigLoader.init()取进行notify订阅
   NConfigLoader.init()订阅消息又注册了nListenerImpl
