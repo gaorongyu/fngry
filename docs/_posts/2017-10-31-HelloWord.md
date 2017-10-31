@@ -5,5 +5,5 @@ layout: default
 
 Here is my page.
 
-:![](..assets/img/NPE.png)
+:![npe](../assets/img/NPE.png)
 
