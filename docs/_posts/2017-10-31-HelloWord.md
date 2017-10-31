@@ -36,7 +36,7 @@ NPluginManager.afterpropertiesSet() 循环获取所有bean的过程中
   NPluginManager.afterpropertiesSet()解析出notify的订阅topic，messageType
   然后调用了调用NConfigLoader.init()取进行notify订阅
   NConfigLoader.init()订阅消息又注册了nListenerImpl
-  nListenerImpl又需要注入属性NPluginManager，导致依赖出现了环
+  nListenerImpl又需要注入属性NPluginManager，导致依赖出现了环  
 ![](../assets/img/dependency-error.png)
 
 
