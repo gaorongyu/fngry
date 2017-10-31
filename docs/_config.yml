@@ -1,1 +1,2 @@
 theme: jekyll-theme-modernist
+permalink: /:month-:day-:year/:title.md
